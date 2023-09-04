@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="login.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="hidden" id="alerta">
+        <p>Acceso denegado</p>
+    </div>
+    <div>
+        <div class="login">
+            <h2>Iniciar sesión</h2>
+            <div method="post" id="login-form">
+                <div class="camp"></div>
+                <input type="email"
+                        class="inputClass"
+                        id="email"
+                        name="email"
+                        placeholder="Email..."
+                        required>
+            </div>
+            <div class="camp">
+                <input type="password"
+                        class="inputClass"
+                        id="password"
+                        name="password"
+                        placeholder="Contraseña"
+                        required>
+            </div>
+
+            <button type="submit" id="btnEnviar">Ingresar</button>
+            <button type="submit" id="btnInvitado">Ingresar como invitado</button>
+        </div>
+        <div class="camp-registrate">
+            <p>¿Aún no estás registrado?</p>
+            <a href="#">Registrate</a>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
