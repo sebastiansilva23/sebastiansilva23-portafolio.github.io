@@ -1,5 +1,12 @@
-function saludar()
-{
-    alert("hola")
+document.addEventListener("DOMContentLoaded", () => {
+const btnSalir = document.getElementById("deslogear");
+
+
+function salir(){
+    localStorage.clear();
+    location.href = "login.html";
 }
-saludar()
+ btnSalir.addEventListener("click", () => {
+    salir();
+ });
+})
